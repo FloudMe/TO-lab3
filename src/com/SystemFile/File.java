@@ -9,11 +9,11 @@ public class File implements FileComponent
 
     public File(String name, String data)
     {
-//        Pattern pattern = Pattern.compile("\\w");
-//        Matcher matcher = pattern.matcher(name);
-//
-//        if(!matcher.matches())
-//            throw new RuntimeException("Zla nazwa pliku " + name);
+        Pattern pattern = Pattern.compile("[a-zA-Z0-9.]*");
+        Matcher matcher = pattern.matcher(name);
+
+        if(!matcher.matches())
+            throw new RuntimeException("Zla nazwa pliku " + name);
 
 
         this.name = name;

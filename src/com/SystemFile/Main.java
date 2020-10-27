@@ -6,7 +6,7 @@ public class Main {
 
         try {
 
-            ProxyFolder f1 = new ProxyFolder("Folder1");
+            ProxyFolder f1 = new ProxyFolder("Folder.1");
             ProxyFolder f2 = new ProxyFolder("Folder2");
             ProxyFolder f3 = new ProxyFolder("Folder3");
 

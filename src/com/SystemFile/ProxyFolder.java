@@ -10,11 +10,11 @@ public class ProxyFolder implements FileComponent, FolderComponent {
 
     public ProxyFolder(String folderName)
     {
-//        Pattern pattern = Pattern.compile("\\w");
-//        Matcher matcher = pattern.matcher(folderName);
-//
-//        if(!matcher.matches())
-//            throw new RuntimeException("Zla nazwa folderu " + folderName);
+        Pattern pattern = Pattern.compile("[a-zA-Z0-9.]*");
+        Matcher matcher = pattern.matcher(folderName);
+
+        if(!matcher.matches())
+            throw new RuntimeException("Zla nazwa folderu " + folderName);
 
         this.folderName = folderName;
     }
